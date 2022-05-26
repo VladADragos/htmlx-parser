@@ -1,0 +1,23 @@
+style:
+    div {
+        width: 500px;
+        height: 500px;
+        background-color: #f00;
+    }
+
+
+markup:
+    <div>
+        <h1>{counter}</h1>
+        <button ref={incButton}></button>
+    </div>
+
+
+data:
+
+    counter: int = 0;
+    incButton.onClick(function () =>{
+        counter++;
+    });
+
+
